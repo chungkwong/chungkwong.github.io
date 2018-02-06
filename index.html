@@ -7,6 +7,7 @@ layout: default
   <span class="tag"><a href="/tag/{{ tag }}">{{ tag }}</a></span>
   {% endfor %}
   <blockquote>{{ post.excerpt }}</blockquote>
+  <div class="enter"><a href="{{ post.url }}">进入正文</a></div>
 {% endfor %}
 
 {% for tag in site.tags %}
