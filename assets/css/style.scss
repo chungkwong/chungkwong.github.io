@@ -3,9 +3,12 @@
 
 @import 'jekyll-theme-architect';
 
-.tag {
+.tag{
   background-color: orange;
 }
 .enter{
   text-align: right;
+}
+td,th{
+  text-align: left;
 }
