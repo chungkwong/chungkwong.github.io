@@ -6,6 +6,7 @@ for tag in `grep -h '^tags:' _posts/* | sed 's/^tags://g;s/ /\n/g'`;do
 layout: tag
 title: ${tag}
 tags: ${tag}
+sitemap: false
 ---" > "tag/${tag}.html";
 done;
 
