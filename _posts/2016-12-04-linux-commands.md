@@ -187,8 +187,8 @@ tags: gnu linux 操作系统
 |comm|逐行比较两个已排序的文件||
 |sdiff|边对边地合并文件||
 |patch|对原文件应用diff文件||
-|sed |用于过滤或转换文本的流编辑器，参考[sed](sed.md)||
-|gawk|一种模式匹配与处理工具，参考[GAWK](GAWK.md)||
+|sed |用于过滤或转换文本的流编辑器，参考[sed](/2016/12/03/sed.html)||
+|gawk|一种模式匹配与处理工具，参考[GAWK](/2016/12/23/gawk.html)||
 |grep, egrep, fgrep | 打印匹配给定模式的行|||
 |less |在显示器上分屏阅读文件的过滤器（建议）||
 |more |在显示器上分屏阅读文件的过滤器||
