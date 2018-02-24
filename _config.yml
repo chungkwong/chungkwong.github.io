@@ -4,10 +4,14 @@ lang: zh_CN
 author: 陈颂光
 google_analytics: 
 show_downloads: false
-theme: jekyll-theme-architect
 paginate: 20
+baseurl: ""
 
 gems:
-  - jekyll-mentions
   - jekyll-sitemap
   - jekyll-feed
+  - jekyll-paginate
+  - jekyll-seo-tag
+
+markdown: kramdown
+exclude: ["README.md"]
