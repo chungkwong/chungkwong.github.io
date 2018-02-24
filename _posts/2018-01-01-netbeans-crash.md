@@ -1,5 +1,6 @@
 ---
 title:  "Debian和openJDK下Netbeans 8随机崩溃的应对"
+layout: post
 tags: netbeans 应急
 ---
 

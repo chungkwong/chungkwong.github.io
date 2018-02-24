@@ -1,5 +1,6 @@
 ---
 title:  "非典型香港足迹"
+layout: post
 tags: 照片 香港
 ---
 
