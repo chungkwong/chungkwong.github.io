@@ -5,7 +5,7 @@ author: 陈颂光
 google_analytics: 
 show_downloads: false
 paginate: 20
-baseurl: ""
+baseurl: "https://chungkwong.gitlab.io"
 
 gems:
   - jekyll-sitemap
