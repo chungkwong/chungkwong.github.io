@@ -19,7 +19,7 @@ test:
 pages:
   stage: deploy
   script:
-  - sed -i '/baseurl: ""/aurl: "https://chungkwong.gitlab.io"' _config.yml
+  - 'sed -i ''/baseurl: ""/aurl: "https://chungkwong.gitlab.io"'' _config.yml'
   - bundle exec jekyll build -d public/
   artifacts:
     paths:
