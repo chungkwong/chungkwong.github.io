@@ -21,6 +21,7 @@ pages:
   script:
   - 'sed -i ''/baseurl: ""/aurl: "https://chungkwong.gitlab.io"'' _config.yml'
   - bundle exec jekyll build -d public/
+  - cp -R .well-known public
   artifacts:
     paths:
     - public
