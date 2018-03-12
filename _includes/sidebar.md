@@ -1,9 +1,11 @@
 ## [订阅RSS](/feed.xml)
 
 {% unless site.github%}
+{% if page.toc %}
 ## 目录
 
 {{content | toc_only}}
+{% endif %}
 {% endunless%}
 
 ## [关于作者](/about.html)
