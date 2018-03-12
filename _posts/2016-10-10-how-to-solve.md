@@ -1,5 +1,6 @@
 ---
 title:  "怎样解题"
+redirect_from: /2016/10/10/how-to-solve.html
 layout: post
 tags: 方法论
 ---

@@ -1,5 +1,6 @@
 ---
 title:  "琳·康维：一个默默地改变计算机世界的变性人"
+redirect_from: /2015/02/01/dis-inventor.html
 layout: post
 tags: 人物 硬件 转载
 ---

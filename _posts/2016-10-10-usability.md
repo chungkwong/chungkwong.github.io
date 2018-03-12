@@ -1,5 +1,6 @@
 ---
 title:  "理解可用性"
+redirect_from: /2016/10/10/usability.html
 layout: post
 tags: 可用性 方法论
 ---

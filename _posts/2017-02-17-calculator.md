@@ -1,5 +1,6 @@
 ---
 title:  "命令行计算器概览"
+redirect_from: /2017/02/17/calculator.html
 layout: post
 tags: unix 计算器
 ---

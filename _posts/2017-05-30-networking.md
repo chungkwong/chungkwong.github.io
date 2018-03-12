@@ -1,5 +1,6 @@
 ---
 title:  "理解计算机网络"
+redirect_from: /2017/05/30/networking.html
 layout: post
 tags: 网络
 ---

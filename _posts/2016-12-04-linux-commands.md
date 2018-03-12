@@ -1,5 +1,6 @@
 ---
 title:  "Linux下常用命令概览"
+redirect_from: /2016/12/04/linux-commands.html
 layout: post
 last_modified_at: 2018-02-15
 tags: gnu linux 操作系统

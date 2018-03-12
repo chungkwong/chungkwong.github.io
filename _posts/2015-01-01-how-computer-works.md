@@ -1,5 +1,6 @@
 ---
 title:  "从电路到计算机"
+redirect_from: /2015/01/01/how-computer-works.html
 layout: post
 tags: 硬件
 ---

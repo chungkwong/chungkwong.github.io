@@ -1,5 +1,6 @@
 ---
 title:  "理解多媒体编码"
+redirect_from: /2017/04/23/multimedia.html
 layout: post
 tags: 多媒体 编码
 ---

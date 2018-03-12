@@ -1,5 +1,6 @@
 ---
 title:  "正则表达式概览"
+redirect_from: /2016/12/29/regular-expression.html
 layout: post
 tags: unix java 正则表达式
 ---

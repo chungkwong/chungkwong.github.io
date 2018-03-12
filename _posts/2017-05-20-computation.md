@@ -1,5 +1,6 @@
 ---
 title:  "理解计算理论"
+redirect_from: /2017/05/20/computation.html
 layout: post
 mathjax: true
 tags: 计算理论 可计算性 复杂度

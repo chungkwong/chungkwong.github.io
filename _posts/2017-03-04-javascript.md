@@ -1,5 +1,6 @@
 ---
 title:  "Javascript概览"
+redirect_from: /2017/03/04/javascript.html
 layout: post
 tags: javascript web 程序设计语言
 ---
