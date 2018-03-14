@@ -22,7 +22,7 @@ tags: web
 - [GitLab pages](https://about.gitlab.com/features/pages/)作为上者的开源山寨品，容许私服、容许免费的私有仓库、定制域名支持HTTPS、可灵活配置构建过程用的静态生成器及插件；不足则有文档相对不完整、用户少导致求助困难还有不能301重定向到HTTPS。
 - [码云 pages](http://git.mydoc.io/?t=154714)作为上者的一个定制私服，优点是国内访问速度快，但似乎没有别的好处，限制还多回去
 
-使用静态空间的话，自然就不能用类似于[Wordpress](https://cn.wordpress.org/)（号称世界上30%的网站在用它）之类的内容管理系统（CMS）。但这也不意味着要退回去一个一个地手写每一个HTML页面，我们可以用更浓缩的语言写文章，然后用某种程序生成最终的HTML文件，包括目录等辅助页面，这就是静态生成器，其中Jekyll要算是最流行的。
+使用静态空间的话，自然就不能用类似于[Wordpress](https://cn.wordpress.org/)（号称世界上30%的网站在用它）或[Joomla](https://www.joomla.org/)（也有百万计网站基于它）之类的内容管理系统（CMS）。但这也不意味着要退回去一个一个地手写每一个HTML页面，我们可以用更浓缩的语言写文章，然后用某种程序生成最终的HTML文件，包括目录等辅助页面，这就是静态生成器，其中Jekyll要算是最流行的。通过借助其它服务器上的服务，即使静态网站也能实现站内搜索、评论之类的功能。
 
 {% raw %}
 
@@ -34,7 +34,7 @@ tags: web
 1. 登录[GitLab](https://gitlab.com/)
 2. Fork这个[jekyll模板仓库](https://gitlab.com/pages/jekyll)
 3. 在“Settings”中的“Advanced settings”中的“Rename repository”中把仓库名改成这个样子`你的用户名.gitlab.io`（这样网站将可在`https://你的用户名.gitlab.io`访问；如果仓库是其它名字，网站可在`https://你的用户名.gitlab.io/仓库名`访问）
-4. 把仓库克隆到本地，形如：`git clone 'https://gitlab.com/chungkwong/chungkwong.gitlab.io.git'&&cd chungkwong.gitlab.io`
+4. 把仓库克隆到本地，形如：`git clone 'https://gitlab.com/你的用户名/你的用户名.gitlab.io.git'&&cd 你的用户名.gitlab.io`
 5. 把仓库中`_config.yml`文件中`baseurl: "/jekyll"`以为`baseurl: "/"`（如果你用了`你的用户名.gitlab.io`外的仓库名，把这行的`jekyll`改为仓库名）
 6. 提交上述修改：`git commit -a`
 7. 推入到GitLab的master分支：`git push origin master`
@@ -43,15 +43,15 @@ tags: web
 如果你不想Fork，而要从头开始也是可以的。方法如下：
 1. 新建一个仓库（名称规则同上）
 2. 在仓库页上点击“Set up CI/CD”
-3. 把部署脚本`.gitlab-ci.yml`设置好
-4. 把仓库克隆到本地
+3. 把仓库克隆到本地
+4. 把部署脚本`.gitlab-ci.yml`设置好（可以先参考上述模板中的）
 5. `jekyll new`
 6. 提交
 7. 推入
 
 ### 编写载客文章
 
-每写一篇博客文章，在`_posts`目录中新增一个文件名形如`年年年年-月月-日日-用户看到的文件名.后缀`的文件，它的开始部分是被两个`---`包围的导言区，用于指定关于博文的各种可选的元数据。
+每写一篇博客文章，在`_posts`目录中新增一个文件名形如`年年年年-月月-日日-用户看到的文件名.后缀`的文件，它的开始部分是被两个`---`包围的导言区，用于以[YAML格式](http://www.yaml.org/spec/1.2/spec.html)指定关于博文的各种可选的元数据。
 
 ```
 ---
@@ -66,7 +66,7 @@ tags: 标签1 标签2 标签3 # 用空格分隔的标签
 ---
 ```	
 
-导言区后的是内容，格式化方法取决于文件名后缀，如通常`md`表示Markdown，`html`表示HTML。以下以Markdown为例，除了[标准Markdown](https://daringfireball.net/projects/markdown/)外，还可以使用[GitHub风格的Markdown](https://guides.github.com/features/mastering-markdown/)，比如要高亮显示代码，只用：
+导言区后的是内容，格式化方法取决于文件名后缀，如通常`md`表示Markdown，`html`表示HTML。以下以Markdown为例，除了[标准Markdown](https://daringfireball.net/projects/markdown/)外，还可以使用[GitHub风格的Markdown](https://guides.github.com/features/mastering-markdown/)，比如要高亮显示代码，只用这样：
 
 <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="sb">
 &#x60;&#x60;&#x60;ruby
@@ -136,13 +136,13 @@ exclude:              ["Gemfile", "Gemfile.lock", "node_modules", "vendor/bundle
 keep_files:           [".git", ".svn"] # 在重建站点保留的文件（包括目录，相对于输出目录），通常用于不是Jekyll生成的文件
 encoding:             "utf-8" # 文件编码方式
 markdown_ext:         "markdown,mkdown,mkdn,mkd,md" # Markdown文件后缀
-strict_front_matter: false # 有YAML语法错误时构建失败
+strict_front_matter: false # 是否在有YAML语法错误时构建失败
 
 # Filtering Content
 show_drafts: null  # 是否处理和显示未发布的博文
 limit_posts: 0     # 最多发布的博文数
-future:      false # 渲染日期在未来的博文
-unpublished: false # 渲染标记为unpublished的博文
+future:      false # 是否渲染日期在未来的博文
+unpublished: false # 是否渲染标记为unpublished的博文
 
 # Plugins
 whitelist: []
@@ -167,9 +167,9 @@ permalink:     /:categories/:year/:month/:day/:title:output_ext # 博文生成�
 paginate_path: /page:num # 分页路径
 timezone:      null # 用于站点生成的时区
 
-quiet:    false # 抑制输出
-verbose:  false # 生成详细的输出
-defaults: []    # 把默认值应用到一组文件，如下：
+quiet:    false # 是否抑制输出
+verbose:  false # 是否生成详细的输出
+defaults: []    # 把默认值应用到一组文件，例子如下：
 #defaults:
 #  -
 #    scope:
@@ -226,7 +226,7 @@ kramdown:
 <ul>
   {% for post in site.posts %} <!-- 分页时改为paginator.posts, 并在_config.yml中加入行paginate: 每页文章数 -->
     <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
       <blockquote>{{ post.excerpt }}</blockquote><!-- 不需要摘要可去掉这行 -->
     </li>
   {% endfor %}
@@ -243,9 +243,9 @@ layout: default
 <h1>{{page.tags}}</h1>
 
 {% for post in site.tags[page.tags] %}
-  <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+  <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
   {% for tag in post.tags %}
-  <span class="tag"><a href="/tag/{{ tag }}">{{ tag }}</a></span>
+  <span class="tag"><a href="{{ '/tag/' | relative_url }}{{ tag }}">{{ tag }}</a></span>
   {% endfor %}
   <blockquote>{{ post.excerpt }}</blockquote>
 {% endfor %}
@@ -284,7 +284,7 @@ done;
 {% if page.tags.size>0 %}
 标签：
 {% for tag in page.tags %}
-<span class="tag"><a href="/tag/{{ tag }}">{{ tag }}</a></span>
+<span class="tag"><a href="{{ '/tag/' | relative_url }}{{ tag }}">{{ tag }}</a></span>
 {% endfor %}
 {% endif %}
 ```
@@ -297,7 +297,7 @@ done;
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$']]}});
 </script>
-<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+<script type="text/javascript" async src="https://cdn.jsdelivr.net/npm/mathjax@2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
 ```
 
@@ -394,7 +394,7 @@ Liquid中有以下类型：
 `site.html_pages`|`site.pages`后缀为`.html`的子集
 `site.html_files`|`site.static_files`后缀为`.html`的子集
 `site.collections`|集合列表，每个集合又有属性如`label`、`docs`、`files`、`relative_directory`、`directory`、`output`
-`site.data|来自`_data`目录的数据列表
+`site.data`|来自`_data`目录的数据列表
 `site.documents`|所有集合中全部文档列表
 `site.categories.分类`|特定分类中全部博文列表
 `site.tags.标签`|特定标签中全部博文列表
@@ -410,7 +410,7 @@ Liquid中有以下类型：
 `page.content`|页面内容
 `page.title`|页面标题
 `page.excerpt`|文档的摘要（未渲染）
-`page.url|页面位置（不带域名，但带前导`/`）
+`page.url`|页面位置（不带域名，但带前导`/`）
 `page.date`|页面日期
 `page.id`|页面的惟一标识
 `page.categories`|页面的分类列表
@@ -464,7 +464,7 @@ Liquid中有以下类型：
 - `date_to_string`把日期用短格式表示
 - `date_to_long_string`把日期用长格式表示
 - `where`选取由首参数给出属性的值为次参数的元素组成和子数组
-- `where_exp`:选取由满足次参数给出表达式（其中可通过首参数给出的名字引用元素）的元素组成和子数组
+- `where_exp`选取由满足次参数给出表达式（其中可通过首参数给出的名字引用元素）的元素组成和子数组
 - `group_by`用于按参数给出的属性对数组元素分组
 - `group_by_exp`用于按首参数给出次参数给出表达式（其中可通过首参数给出的名字引用元素）输出对数组元素分组
 - `xml_escape`用于作XML转义
@@ -500,7 +500,7 @@ Liquid中有以下类型：
 layout: default
 ---
 
-我们真的找不到你要的页面，还是回到[首页](/)吧
+我们真的找不到你要的页面，还是回到[首页]({{ '/' | relative_url }})吧
 ```
 
 当然你也可以用HTML页面而不是Markdown。
@@ -538,7 +538,7 @@ Gitlab Pages支持多个自定义域名而且可以自定义SSL证书。使用�
     6. 成功验证后就会签发证书保存到特定目录
 3. 把你的域名和证书告知Gitlab
     1. 在GitLab打开你的网站项目页，如本网站是`https://gitlab.com/chungkwong/chungkwong.gitlab.io`，然后导航到“Settings”中的“Pages”
-    2. 点击“New Domain”，然后输入你的域名（或子域名，如`www.chungkwong.cc`）、密钥（Debian下位于类似的`/etc/letsencrypt/archive/chungkwong.cc/privkey1.pem`安全地方）和证书（Debian下位于类似的`/etc/letsencrypt/archive/www.chungkwong.cc/fullchain1.pem`安全地方）
+    2. 点击“New Domain”，然后输入你的域名（或子域名，如`www.chungkwong.cc`）、密钥（Debian下位于类似的`/etc/letsencrypt/archive/chungkwong.cc/privkey1.pem`安全地方）和证书（Debian下位于类似的`/etc/letsencrypt/archive/chungkwong.cc/fullchain1.pem`安全地方）
     3. 记下验证码
 4. 在域名注册商设置解析
     1. 为你上面在GitLab输入的（子）域名增加CNAME记录，值为你的GitLab Pages域名，如`chungkwong.gitlab.io`
@@ -546,6 +546,6 @@ Gitlab Pages支持多个自定义域名而且可以自定义SSL证书。使用�
 5. 在每3步最后的页面点击“Verify ownership”
 6. 你应该很快可以通过你指定的域名访问你的网站，比如URL`https://www.chungkwong.cc`。但如果之前有人企图访问过该域名，则这可能要等一段时间直到各级缓存过期，你的修改才生效。
 
-遗憾的是，GitLab本身不能在证书到期时自动续期，于是你可能需要每90天重复上述过程来保证SSL证书一直有效。不过如果如果你的电脑总是开启且有联网，一个可行方案是用crontab任务定期更新证书再用[GitLab API](https://docs.gitlab.com/ce/api/pages_domains.html)上传新证书。
+遗憾的是，GitLab本身不能在证书到期时自动续期，于是你可能需要每90天重复上述过程来保证SSL证书一直有效（更新证书可用`sudo certbot renew`而不用重复第二步全部步骤）。不过如果如果你的电脑总是开启且有联网，一个可行方案是用crontab任务定期更新证书再用[GitLab API](https://docs.gitlab.com/ce/api/pages_domains.html)上传新证书。
 
 如果对Gitlab Pages还有疑问，可以看一下[文档](https://docs.gitlab.com/ce/user/project/pages/introduction.html)

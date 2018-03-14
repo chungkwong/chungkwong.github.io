@@ -12,7 +12,7 @@ layout: default
     {% if page.tags.size>0 %}
     关键词
     {% for tag in page.tags %}
-    <span class="tag"><a href="/tag/{{ tag }}" rel="nofollow">{{ tag }}</a></span>
+    <span class="tag"><a href="{{ '/tag/' | relative_url }}{{ tag }}" rel="nofollow">{{ tag }}</a></span>
     {% endfor %}
     {% endif %}
   </div>

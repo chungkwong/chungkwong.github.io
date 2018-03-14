@@ -1,14 +1,14 @@
-## [订阅RSS](/feed.xml)
-
 {% unless site.github%}
 {% if page.toc %}
-## 目录
+## [目录]({{ '/' | relative_url }})
 
 {{content | toc_only}}
 {% endif %}
 {% endunless%}
 
-## [关于作者](/about.html)
+## [订阅RSS]({{ '/feed.xml' | relative_url }})
+
+## [关于作者]({{ '/about.html' | relative_url }})
 
 - [GitHub](https://github.com/chungkwong)
 - [GitLab](https://gitlab.com/chungkwong)

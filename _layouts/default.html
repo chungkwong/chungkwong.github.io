@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}" media="screen" type="text/css">
     <link rel="stylesheet" href="{{ '/assets/css/print.css' | relative_url }}" media="print" type="text/css">
+    <link rel="shortcut icon" href="{{ '/favicon.ico' | relative_url }}" />
+    <link rel="bookmark" href="{{ '/favicon.ico' | relative_url }}" type="image/x-icon"　/>
     <link rel="canonical" href="https://chungkwong.cc{{ page.url }}" />
 
 
@@ -16,8 +18,11 @@
     <script type="text/x-mathjax-config">
         MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$']]}});
     </script>
-    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+    <script type="text/javascript" async src="https://cdn.jsdelivr.net/npm/mathjax@2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
     </script>
+<!--    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+-->
 {% endif %}
     <script>
       var _hmt = _hmt || [];
@@ -72,7 +77,7 @@
       </div>
     </div>
     <footer>
-      <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="/image/cc.png" /></a><br><a href="https://chungkwong.cc/">陈颂光博客</a>采用<a rel="license" href="http://creativecommons.org/licenses/by/4.0/">知识共享署名 4.0 国际许可协议</a>进行许可。
+      <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="{{ '/image/cc.png' | relative_url }}" /></a><br><a href="https://chungkwong.cc/">陈颂光博客</a>采用<a rel="license" href="http://creativecommons.org/licenses/by/4.0/">知识共享署名 4.0 国际许可协议</a>进行许可。
     </footer>
   </body>
 </html>
