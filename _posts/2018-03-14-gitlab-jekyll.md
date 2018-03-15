@@ -267,7 +267,7 @@ tags: 标签
 #!/bin/bash
 
 mkdir -p tag;
-for tag in `grep -h '^tags:' _posts/* | sed 's/^tags://g;s/ /\n/g'`;do
+for tag in `grep -h -m 1 '^tags:' _posts/* | sed 's/^tags://g;s/ /\n/g'`;do
 	echo "---
 layout: tag
 title: ${tag}
