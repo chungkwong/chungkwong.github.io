@@ -5,9 +5,9 @@ mathjax: true
 tags: 图像处理
 ---
 
-[《GIMP修图入门》](/2018-04-04-gimp.html)中介绍了GIMP的基本用法，这里我们再介绍GIMP以插件形式提供的各种滤镜，可以通过应用算法对图层进行修改来实现各种各样的效果。
+[《GIMP修图入门》](/gimp.html)中介绍了GIMP的基本用法，这里我们再介绍GIMP以插件形式提供的各种滤镜，可以通过应用算法对图层进行修改来实现各种各样的效果。
 
-按照图像处理的惯例，我们在大多数例子中用[Lena头像](http://www.lenna.org/)作为输入：
+按照图像处理的惯例，我们在大多数例子中用[Lena头像](http://www.lenna.org/)作为输入（为了避免被列入黑名单，就不用全身了）：
 
 ![Lena头像](/image/gimp_thumb/lena_std.jpeg)
 
