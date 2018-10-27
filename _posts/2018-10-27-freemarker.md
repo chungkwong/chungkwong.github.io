@@ -19,9 +19,9 @@ tags: java
 
 ```
 <dependency>
- <groupId>org.freemarker</groupId>
- <artifactId>freemarker</artifactId>
- <version>2.3.28</version>
+	<groupId>org.freemarker</groupId>
+	<artifactId>freemarker</artifactId>
+	<version>2.3.28</version>
 </dependency>
 ```
 
@@ -39,21 +39,21 @@ import freemarker.template.*;
 import java.io.*;
 import java.util.*;
 public class Main{
- public static void main(String[] args) throws IOException,TemplateException{
-  //创建配置类，配置类应尽可能重用，不必再创建以提高性能
-  Configuration configuration=new Configuration(Configuration.getVersion());
-  //设置模板所在目录，另有
-  // setDirectoryForTemplateLoading(File)
-  // setClassLoaderForTemplateLoading(ClassLoader, String)
-  configuration.setClassForTemplateLoading(Main.class,"");
-  //取得模板  
-  Template template=configuration.getTemplate("example.ftl");
-  //准备模型
-  Map<String,Object> model=new HashMap<>();
-  model.put("name","陈大文");
-  //套用模板并把结果输出到一个流
-  template.process(model,new OutputStreamWriter(System.out));
- }
+	public static void main(String[] args) throws IOException,TemplateException{
+		//创建配置类，配置类应尽可能重用，不必再创建以提高性能
+		Configuration configuration=new Configuration(Configuration.getVersion());
+		//设置模板所在目录，另外可改为
+		// setDirectoryForTemplateLoading(File)
+		// setClassLoaderForTemplateLoading(ClassLoader, String)
+		configuration.setClassForTemplateLoading(Main.class,"");
+		//取得模板  
+		Template template=configuration.getTemplate("example.ftl");
+		//准备模型
+		Map<String,Object> model=new HashMap<>();
+		model.put("name","陈大文");
+		//套用模板并把结果输出到一个流
+		template.process(model,new OutputStreamWriter(System.out));
+	}
 }
 ```
 
@@ -66,10 +66,10 @@ public class Main{
 - `TemplateBooleanModel`对应于布尔值
 - `TemplateCollectionModel`对应于集合，它的子接口`TemplateCollectionModelEx`支持查询元素数
 - `TemplateDateModel`对应于日期和/或时间
-- `TemplateDirectiveModel`对应于模板可使用的指令，提供方法`void execute(Environment env,Map params, TemplateModel[] loopVars,TemplateDirectiveBody body) throws TemplateException, IOException`
+- `TemplateDirectiveModel`对应于模板可使用的指令，在需要自定义指令时可覆盖方法`void execute(Environment env,Map params, TemplateModel[] loopVars,TemplateDirectiveBody body) throws TemplateException, IOException`
 - `TemplateHashModel`对应于哈希表，它的子接口`TemplateHashModelEx`和`TemplateHashModelEx2`提供迭代键值对的方法
 - `TemplateMarkupOutputModel`对于于不应再转义就能输出的代码
-- `TemplateMethodModel`对应于模板可调用的方法，它的子接口`TemplateMethodModelEx`要求实参以`TemplateModel`而非`String`传入方法`TemplateModel exec(List args) throws TemplateModelException`
+- `TemplateMethodModel`对应于模板可调用的方法，它的子接口`TemplateMethodModelEx`要求实参以`TemplateModel`而非`String`传入方法由`TemplateModel exec(List args) throws TemplateModelException`给出的自定义方法
 - `TemplateModelWithAPISupport`
 - `TemplateNodeModel`对应于XML文档中的结点，它的子接口`TemplateNodeModelEx`支持查找相邻兄弟结点
 - `TemplateNumberModel`对应于数值
@@ -81,16 +81,16 @@ public class Main{
 
 ### 语法
 
-模板中形如`<#-- 注释内容 -->`的是注释（注释内容中不能含`-->`），会被忽略。注意注释可以出现在变量名或指令中。
+模板中形如`<#-- 注释内容 -->`的是注释（注释内容中不能含`-->`），会被忽略。注意注释也可以出现在表达式或指令中。
 
 模板中其余部分由以下构造连接而成：
 
 构造|说明
 ---|---
 `${表达式}`|输出表达式的值
-`$变量名`|输出变量的值，其中变量名只可以包含字母(也可以是非拉丁文)、 数字(也可以是非拉丁数字)、 下划线 、 美元符号、 at符号，且首个字符不能为ASCII数字，且不能是保留字：`true`、 `false`、 `gt`、 `gte`、 `lt`、 `lte`、 `as`、 `in`、 `using`
+`$变量名`|输出变量的值，其中变量名只可以包含字母(也可以是非拉丁文)、 数字(也可以是非拉丁数字)、 下划线 、 美元符号、 at符号，且首个字符不能为ASCII数字，变量名不能是保留字：`true`、 `false`、 `gt`、 `gte`、 `lt`、 `lte`、 `as`、 `in`、 `using`
 `<#指令名 参数>`|开始指令
-`</#指令名>`|结束指定（不是所有指令都需要结束）
+`</#指令名>`|结束指令（不是所有指令都需要结束）
 其它字符|原样输出
 
 ### 引用
@@ -270,7 +270,7 @@ Freemarker的表达式如下构成：
 `c`||数字或布尔值转换为字符串
 `cap_first`||首字母大写
 `capitalize`||大写化
-`ceiling`||是取整
+`ceiling`||上取整
 `children`||子结点序列
 `chop_linebreak`||没有的话行末插入换行
 `chunk`|子序列最大长度|把序列转换为子序列的序列
