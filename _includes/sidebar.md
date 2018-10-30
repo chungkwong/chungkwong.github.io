@@ -10,9 +10,13 @@
 
 ## 实用工具
 
-- [综合搜索]({{ '/tool/search-compare.html' | relative_url }})
-- [前端实验台]({{ '/tool/html-preview.html' | relative_url }})
-- [哈希值计算器]({{ '/tool/hash.html' | relative_url }})
+<ul>
+{% for page in site.pages %}
+  {%- if page.navigatable -%}
+  <li><a href="{{ page.url | relative_url }}">{{ page.title }}</a></li>
+  {%- endif -%}
+{% endfor %}
+</ul>
 
 ## [关于作者]({{ '/about.html' | relative_url }})
 
