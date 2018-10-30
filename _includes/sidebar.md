@@ -12,6 +12,7 @@
 
 - [综合搜索]({{ '/tool/search-compare.html' | relative_url }})
 - [前端实验台]({{ '/tool/html-preview.html' | relative_url }})
+- [哈希值计算器]({{ '/tool/hash.html' | relative_url }})
 
 ## [关于作者]({{ '/about.html' | relative_url }})
 
