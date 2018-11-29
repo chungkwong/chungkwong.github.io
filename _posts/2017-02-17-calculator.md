@@ -3,6 +3,8 @@ title:  "命令行计算器概览"
 redirect_from: /2017/02/17/calculator.html
 layout: post
 tags: unix 计算器
+ads:
+    - <a rel="nofollow" target="_blank" href="https://amazon.cn/gp/product/B008Z1IEQ8/ref=as_li_tl?ie=UTF8&tag=chungkwong-23&camp=536&creative=3200&linkCode=as2&creativeASIN=B008Z1IEQ8&linkId=270aa78907737f2b7700c97ee1f3ecc2">UNIX编程艺术</a>
 ---
 
 当需要做点数值计算时，当然可以用很多种编程语言。但有时我们只想方便一点，于是unix下有一些小计算器。

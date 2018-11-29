@@ -6,6 +6,15 @@
 {% endif %}
 {% endunless%}
 
+{% if page.ads %}
+## 延伸阅读
+<ul>
+{% for ad in page.ads %}
+  <li>{{ad}}</li>
+{% endfor %}
+</ul>
+{% endif %}
+
 ## [订阅RSS]({{ '/feed.xml' | relative_url }})
 
 ## 实用工具
@@ -23,6 +32,4 @@
 - [GitHub](https://github.com/chungkwong)
 - [GitLab](https://gitlab.com/chungkwong)
 - [Maven](http://mvnrepository.com/artifact/com.github.chungkwong)
-
-
 

@@ -3,6 +3,8 @@ title:  "正则表达式概览"
 redirect_from: /2016/12/29/regular-expression.html
 layout: post
 tags: unix java 正则表达式
+ads:
+    - <a rel="nofollow" target="_blank" href="https://amazon.cn/gp/product/B076M1DGD2/ref=as_li_tl?ie=UTF8&tag=chungkwong-23&camp=536&creative=3200&linkCode=as2&creativeASIN=B076M1DGD2&linkId=7c707d9dd938db40f5b0e398651c343d">精通正则表达式</a>
 ---
 
 一个正则表达式是一个描述了一个字符串集合的模式，在文本处理中是极为重要的工具。

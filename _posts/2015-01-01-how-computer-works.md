@@ -3,6 +3,8 @@ title:  "从电路到计算机"
 redirect_from: /2015/01/01/how-computer-works.html
 layout: post
 tags: 硬件
+ads:
+    - <a rel="nofollow" target="_blank" href="https://amazon.cn/gp/product/B0123AN5TM/ref=as_li_tl?ie=UTF8&tag=chungkwong-23&camp=536&creative=3200&linkCode=as2&creativeASIN=B0123AN5TM&linkId=307b90fe15fc383255fb640965c8051c">计算机系统:系统架构与操作系统的高度集成</a>
 ---
 
 计算机和其它机器一样，不管它看起来有多复杂，都是从相当简单的东西一步一脚印地建成的。现在我们由普通中学生能理解的普通物理常识出发，说明计算机的关键组件可以如何实现。当然，商用的计算机集结了许多能干工程师的智慧来进行了高度优化，不像我们粗陋的原型，但产品正是从原型变出来的。

@@ -4,6 +4,8 @@ redirect_from: /2016/12/04/linux-commands.html
 layout: post
 last_modified_at: 2018-02-15
 tags: gnu linux 操作系统
+ads:
+    - <a rel="nofollow" target="_blank" href="https://amazon.cn/gp/product/B008Z1IEQ8/ref=as_li_tl?ie=UTF8&tag=chungkwong-23&camp=536&creative=3200&linkCode=as2&creativeASIN=B008Z1IEQ8&linkId=270aa78907737f2b7700c97ee1f3ecc2">UNIX编程艺术</a>
 ---
 
 命令是类Unix系统的一个重要接口（C函数是更低层次的一个，但命令通常是第一选择，Unix传统认为一行shell胜万行C），使用Unix应当了解一些命令，以便把它们组合起来用。Unix有很多命令，不用一一记住，但应该知道什么样的任务有命令可用。Unix命令的用法大都是规则的（有点经验一般能大致猜到），同时Unix有方便的帮助系统，需要时查阅即可。

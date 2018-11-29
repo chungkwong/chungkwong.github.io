@@ -3,6 +3,8 @@ title:  "图解GIMP滤镜"
 layout: post
 mathjax: true
 tags: 图像处理
+ads:
+    - <a rel="nofollow" target="_blank" href="https://amazon.cn/gp/product/B00BYCPI7I/ref=as_li_tl?ie=UTF8&tag=chungkwong-23&camp=536&creative=3200&linkCode=as2&creativeASIN=B00BYCPI7I&linkId=247749981cb506638697a9cf48a79c32">GIMP图像处理经典教程</a>
 ---
 
 [《GIMP图像处理入门》](/gimp.html)中介绍了GIMP的基本用法，这里我们再介绍GIMP以插件形式提供的各种滤镜，可以通过应用算法对图层进行修改来实现各种各样的效果。

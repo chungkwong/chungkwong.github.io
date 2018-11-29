@@ -3,6 +3,8 @@ title:  "理解计算机网络"
 redirect_from: /2017/05/30/networking.html
 layout: post
 tags: 网络
+ads:
+    - <a rel="nofollow" target="_blank" href="https://amazon.cn/gp/product/B007JFRQ0G/ref=as_li_tl?ie=UTF8&tag=chungkwong-23&camp=536&creative=3200&linkCode=as2&creativeASIN=B007JFRQ0G&linkId=ad0c2403ecba72493647229bdaaed2c7">计算机网络</a>
 ---
 
 一组相互连接的网络称为互联网。为了设计和描述网络，通常用分层方法以分解复杂度，每层负责提供不同的服务，每一层只依赖于下面一层的接口。每一层也可有多种称为协议的工作方式以提高灵活性。下面给出一个实用的分层模型：

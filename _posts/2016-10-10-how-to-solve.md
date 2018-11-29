@@ -3,6 +3,8 @@ title:  "怎样解题"
 redirect_from: /2016/10/10/how-to-solve.html
 layout: post
 tags: 方法论
+ads:
+    - <a rel="nofollow" target="_blank" href="https://amazon.cn/gp/product/B0069K40EC/ref=as_li_tl?ie=UTF8&tag=chungkwong-23&camp=536&creative=3200&linkCode=as2&creativeASIN=B0069K40EC&linkId=f7e8c5164d1614487891d587b9ad57ae">怎样解题</a>
 ---
 
 波利亚在《怎样解题》中给出一个怎样解题表，虽然它面向的是数学的领域，但后来被发现在编程上也有其方法论意义。

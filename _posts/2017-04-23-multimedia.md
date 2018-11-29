@@ -3,6 +3,8 @@ title:  "理解多媒体编码"
 redirect_from: /2017/04/23/multimedia.html
 layout: post
 tags: 多媒体 编码
+ads:
+    - <a rel="nofollow" target="_blank" href="https://amazon.cn/gp/product/B0744TZHXL/ref=as_li_tl?ie=UTF8&camp=536&creative=3200&creativeASIN=B0744TZHXL&linkCode=as2&tag=chungkwong-23&linkId=6d5e80bdc777b900e59efe8bc57584b4">现代操作系统</a>
 ---
 
 与文本相比，图片、音频、视频往往占用较多空间，于是瓶颈常常在传输，为了提高性能通常会进行有损压缩，但人们竟然大多感觉不出损失。

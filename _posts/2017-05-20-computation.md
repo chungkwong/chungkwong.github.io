@@ -4,6 +4,8 @@ redirect_from: /2017/05/20/computation.html
 layout: post
 mathjax: true
 tags: 计算理论 可计算性 复杂度
+ads:
+    - <a rel="nofollow" target="_blank" href="https://amazon.cn/gp/product/B013GBA19O/ref=as_li_tl?ie=UTF8&tag=chungkwong-23&camp=536&creative=3200&linkCode=as2&creativeASIN=B013GBA19O&linkId=3ecedbb437403daedd93cd2f8f16cbbf"> 计算理论导引</a>
 ---
 
 什么能算，什么不能算？能算的话能需要多少空间和时间才能算出？这是关于计算的基本问题。虽然听来也许有点玄，但人们还是得到一些不仅美而且实在的结果。好像不存在通用压缩算法总能把文件压到比原来小，不然反复用它就能把文件压没了，这道理虽然浅显，但意味深长。
