@@ -25,6 +25,7 @@
   <li><a href="{{ page.url | relative_url }}">{{ page.title }}</a></li>
   {%- endif -%}
 {% endfor %}
+<li><a href="https://www.viewfact.org">睇料搜索</a></li>
 </ul>
 
 ## [关于作者]({{ '/about.html' | relative_url }})

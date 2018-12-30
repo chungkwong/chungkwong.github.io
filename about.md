@@ -10,6 +10,7 @@ toc: true
 
 项目|简介
 :---|:---
+[ViewFact](https://www.viewfact.org) | 一个结构化化数据搜索网站原型
 [Fooledit](https://github.com/chungkwong/fooledit) | 一个什么都会一点的怪物
 [SillyTranslate](https://github.com/chungkwong/sillytranslate) | 一个交互式计算机辅助翻译系统
 [JSchemeMin](https://github.com/chungkwong/jschememin) | 一个Scheme语言的解释器
@@ -22,7 +23,7 @@ toc: true
 ## 技术能力
 
 - 具备多年Java语言编程经验，包括Java SE平台和Android平台。对C、Scheme、Prolog也有深入了解。有需要时也改一点JavaScript、PHP、Python、AWK、shell之类的程序。
-- 有一定GNU/Linux、Emacs、CPanel、cakephp、Jekyll、Joomla、五笔输入法、LaTeX、R、Octave、Maxima之类乱七八糟的使用经验。
+- 有一定GNU/Linux、Spring、Solr、Emacs、CPanel、cakephp、Jekyll、Joomla、五笔输入法、LaTeX、R、Octave、Maxima之类乱七八糟的使用经验。
 - 自学过计算机系统、编译原理、操作系统、计算机网络、数据库、数据结构、计算理论、信息安全之类的标准常识。
 
 ## 教育背景
