@@ -10,7 +10,7 @@ toc: true
 
 项目|简介
 :---|:---
-[ViewFact](https://www.viewfact.org) | 一个结构化化数据搜索网站原型
+[ViewFact](https://www.viewfact.org) | 一个结构化数据搜索网站原型
 [Fooledit](https://github.com/chungkwong/fooledit) | 一个什么都会一点的怪物
 [SillyTranslate](https://github.com/chungkwong/sillytranslate) | 一个交互式计算机辅助翻译系统
 [JSchemeMin](https://github.com/chungkwong/jschememin) | 一个Scheme语言的解释器
