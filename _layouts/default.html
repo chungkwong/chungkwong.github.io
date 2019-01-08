@@ -40,9 +40,9 @@
     <header>
       <div class="inner">
         <a href="{{ '/' | absolute_url }}">
-          <h1>{{ site.title | default: site.github.repository_name }}</h1>
+          <div id="site-title">{{ site.title | default: site.github.repository_name }}</div>
         </a>
-        <h2>{{ site.description | default: site.github.project_tagline }}</h2>
+        <div id="site-author">{{ site.description | default: site.github.project_tagline }}</div>
         <a href="https://github.com/chungkwong" class="button"><small>关注我的</small> GitHub</a>
         <!--
 <script type="text/javascript">(function(){document.write(unescape('%3Cdiv id="bdcs"%3E%3C/div%3E'));var bdcs = document.createElement('script');bdcs.type = 'text/javascript';bdcs.async = true;bdcs.src = 'http://znsv.baidu.com/customer_search/api/js?sid=6033826529000162498' + '&plate_url=' + encodeURIComponent(window.location.href) + '&t=' + Math.ceil(new Date()/3600000);var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(bdcs, s);})();</script>
