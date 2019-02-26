@@ -6,6 +6,7 @@
 {% endif %}
 {% endunless%}
 
+{% comment %}
 {% if page.ads %}
 ## 延伸阅读
 <ul>
@@ -14,6 +15,7 @@
 {% endfor %}
 </ul>
 {% endif %}
+{% endcomment %}
 
 ## [订阅RSS]({{ '/feed.xml' | relative_url }})
 
