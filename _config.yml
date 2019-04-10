@@ -12,7 +12,6 @@ gems:
   - jekyll-sitemap
   - jekyll-feed
   - jekyll-paginate
-  - jekyll-seo-tag
   - jekyll-redirect-from
   - jekyll-toc
 

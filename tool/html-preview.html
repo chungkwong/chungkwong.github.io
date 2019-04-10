@@ -10,10 +10,10 @@ navigatable: true
 	}
 	.full{
 		position: fixed;
-		top:40px;
+		top:76px;
 		display: table;
 		width:100%;
-		height: calc(100% - 64px);
+		height: calc(100% - 100px);
 	}
 	.half{
 		display: table-cell;
@@ -25,7 +25,7 @@ navigatable: true
 		width: 100%;
 		height: 100%;
 	}
-	header{
+	.header{
 		position: fixed;
 		line-height: auto;
 		width:100%;
@@ -36,6 +36,7 @@ navigatable: true
 		font-size: 16px;
 		line-height: 100%;
 		bottom: 0px;
+    		padding: 0px;
 	}
 	h1{
 		font-size:32px;
@@ -48,12 +49,12 @@ navigatable: true
 		float:right;
 	}
 </style>
-<header>
+<div class="header">
 	<h1>前端实验台</h1>
 	<form>
 		<input type="checkbox" id="realtime" checked><label for="realtime">实时预览</label>
 		<button id="refresh">刷新预览</button></form>
-</header>
+</div>
 <main class="full">
 	<article class="half"><textarea id="in" placeholder="在左侧输入HTML代码（只用输入通常body标签内的），然后右侧就会显示预览效果。" autofocus></textarea></article>
 	<article class="half"><iframe id="out"></iframe></article>
