@@ -248,19 +248,34 @@ tags: 信息安全 web
 
 ### 收集信息
 
+虽然安全性要求高的系统可能要求在敌方完全知道网站体系架构后仍然坚如磐石，但只要你的网站不是重点攻击对象，攻击者不会费力搞清楚你的网站的结构，只会抓住一些很表面的迹象。以下我们说明一些表面的迹象可以如何暴露信息：
 
-host、whois、搜索、后台暴露、archive、nmap -v -A、favicon、HTTP方法
+首先，我们说明一些不用与目标机器连接就能得到的信息：
 
-Samba
+- 域名注册信息。`whois 域名`可以获取域名信息：
+    - 所有者信息，姓名、地址和邮箱可
+    - 注册商信息，寻找脆弱的注册商
+    - 到期日
+    - 解析服务器
+- 域名解析信息。用`host`、`dig`、`nslookup`等命令可以查询域名解析信息，
+- 搜索
+    - `inurl:admin.php`之类的搜索可以找到许多已知后台入口的网站
+- 网页快照快照。一些网站如[Archive](https://archive.org/)和搜索引擎会保存大量网页的快照，由此可了解网站的版本历史，包括安全修正和过去被窜改的情况。
 
-phpMyAdmin
+通过与目标机器连接，往往可得到更多信息：
+- 端口扫描。通过`nmap -v -A 主机`找出主机各端口尝试连接可找出开放的端口并猜测正在运行的软件，一旦发现它在运行有已知漏洞的软件就可以设法利用。
+- 请求常见路径。
+    - `favicon.ico`。如果网站图标与常见框架相同，就可估计它在使用该框架，同时像是新站或管理员不负责任，因而后台密码和其它安全设置也可能处于默认状态。
+    - `robots.txt`。这文件用于限制搜索引擎的访问，同时往往泄露网站结构，例如后台入口。
+    - Wordpress、phpMyAdmin之类的软件的默认后台路径。
+- HTTP方法。如果支持不经认证进行`PUT`、`DELETE`之类的危险方法，可能可窜改网站。
+
 git
 owasp-wte-burpsuite 1.6-00
 owasp-wte-cal9000 2.0-00
 owasp-wte-dirbuster 1.0-RC1-00
 owasp-wte-ende 1.0RC12-00
 owasp-wte-fierce 0.9.11-Beta04162015-00
-owasp-wte-firefox 37.0.2-00
 owasp-wte-fuzzdb 2015-04-26-svn-00
 owasp-wte-grendel-scan 1.0-00
 owasp-wte-gruyere 1.0-00
@@ -270,7 +285,6 @@ owasp-wte-jerry-curl 1.1-00
 owasp-wte-jq 1.4-00
 owasp-wte-netcat 1.10-00
 owasp-wte-nikto 2.1.5-00
-owasp-wte-nmap 6.40-00
 owasp-wte-paros 3.2.13-00
 owasp-wte-ratproxy 1.58-00
 owasp-wte-skipfish 2.10-00

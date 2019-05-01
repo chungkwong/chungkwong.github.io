@@ -58,7 +58,7 @@ var convertWidget = function (selector, units) {
 		control.step = "any";
 		control.value = 0;
 		control.unitValue = units[unit];
-		control.onchange = function (e) {
+		control.oninput = function (e) {
 			if (!changing) {
 				changing = true;
 				var refValue = e.target.value * e.target.unitValue;
@@ -89,7 +89,7 @@ var affineConvertWidget = function (selector, units) {
 		control.value = 0;
 		control.unitValue = units[unit][0];
 		control.offsetValue = units[unit][1];
-		control.onchange = function (e) {
+		control.oninput = function (e) {
 			if (!changing) {
 				changing = true;
 				var refValue = (e.target.value - e.target.offsetValue) / e.target.unitValue;

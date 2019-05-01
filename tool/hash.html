@@ -3,12 +3,6 @@ title: "哈希值计算器"
 layout: page
 navigatable: true
 ---
-<style type="text/css">
-	output{
-		overflow-wrap: break-word;
-	}
-</style>
-
 <main>
 <form id="hashWidget">
 	<div><label>算法</label><select id="algorithm">
@@ -24,14 +18,14 @@ navigatable: true
 		<option>SHA3-512</option>
 		<option>SHAKE128</option>
 		<option>SHAKE256</option>
-	</select><input id="length" type="number" min="8" step="8" value="8" disabled></input></div>
+	</select><input id="length" type="number" min="8" step="8" value="8" disabled></div>
 	<div><label>输入</label><input type="file" id="input"></div>
-	<div><label>输出</label><output id="output"></div>
+	<div><label>输出</label><output id="output" style="overflow-wrap: break-word;"></output></div>
 </form>
 <script type="text/javascript">
 var loadedFiles = [];
 var ensureLoaded = function (file, task) {
-	if (file in loadedFiles) {
+	if (loadedFiles.indexOf(file)>=0) {
 		task();
 	} else {
 		var script = document.createElement("script");
