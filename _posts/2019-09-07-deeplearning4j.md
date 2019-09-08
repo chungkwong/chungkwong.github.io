@@ -1,5 +1,5 @@
 ---
-title:  "初探Deeplearning4j深度学习框架"
+title:  "Deeplearning4j深度学习框架初探"
 layout: post
 mathjax: true
 tags: 人工智能 java
