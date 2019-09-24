@@ -24,7 +24,9 @@ toc: true
 
 - 具备多年Java语言编程经验，包括Java SE平台和Android平台。对C、Scheme、Prolog也有深入了解。有需要时也改一点JavaScript、PHP、Python、AWK、shell之类的程序。
 - 有一定GNU/Linux、Spring、Solr、Emacs、CPanel、cakephp、Jekyll、Joomla、五笔输入法、LaTeX、R、Octave、Maxima之类乱七八糟的使用经验。
-- 自学过计算机系统、编译原理、操作系统、计算机网络、数据库、数据结构、计算理论、信息安全之类的标准常识。
+- 自学过计算机系统、编译原理、操作系统、计算机网络、数据库、数据结构、模式识别、计算理论、信息安全之类的标准常识。
+- 重新探讨了[把脱机手写识别归结为联机手写识别的可行性](https://arxiv.org/abs/1905.06749)，并用公开数据集上的实验数据给予正面结论。
+- 提出了Sauvola、Niblack等局部自适应二值化方法的一种[内存高效的快速实现](https://arxiv.org/abs/1905.13038)，去掉挥霍空间的积分图像的同时还能稍为提高速度。
 
 ## 教育背景
 
@@ -41,6 +43,7 @@ toc: true
     - 优秀学生二等奖学金（2011-2012）
 *   [中山大学](http://www.sysu.edu.cn/)数学学院基础数学专业硕士研究生（2015-2017）
 *   [中山大学](http://www.sysu.edu.cn/)数学学院基础数学专业博士研究生（2017年起）
+    - 在国际模式识别学会（IAPR）主办的2019年文档分析与识别国际会议（ICDAR）[联机手写数学公式识别竞赛（CROHME）](https://www.cs.rit.edu/~rlaz/files/CROHME+TFD%E2%80%932019.pdf)中脱机识别任务荣获季军。
 
 如有意联系本人，可以发电子邮件到<a href="mailto&#58;1m02math&#64;126&#46;com">1m02math (AT) 126 (DOT) com</a>。
 
