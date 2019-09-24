@@ -20,6 +20,7 @@ pages:
   stage: deploy
   script:
   - 'sed -i ''/baseurl: ""/aurl: "https://www.chungkwong.cc"'' _config.yml'
+  - 'sed -i "s/#//" _config.yml'
   - bundle exec jekyll build -d public/
   - cp -R .well-known public
   artifacts:
