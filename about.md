@@ -49,5 +49,5 @@ toc: true
     - 在2019学年秋季学期担任[《偏微分方程》](https://kwong.gitee.io/pde19/)课程助教
     - 在国际模式识别学会（IAPR）主办的2019年文档分析与识别国际会议（ICDAR）[联机手写数学公式识别竞赛（CROHME）](https://www.cs.rit.edu/~rlaz/files/CROHME+TFD%E2%80%932019.pdf)中脱机识别任务荣获季军。
 
-如有意联系本人，可以发电子邮件到<a href="mailto&#58;1m02math&#64;126&#46;com">1m02math (AT) 126 (DOT) com</a>。
+如有意联系本人，可以发电子邮件到<a href="mailto&#58;chan&#64;chungkwong&#46;cc">chan (AT) chungkwong (DOT) cc</a>。
 
