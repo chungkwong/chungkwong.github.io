@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<h1>{{page.tags}}</h1>
+<h1>与{{page.tags}}相关的博文目录</h1>
 
 {% for post in site.tags[page.tags] %}
   <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
