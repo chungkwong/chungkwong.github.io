@@ -50,5 +50,10 @@ toc: true
     - 在国际模式识别学会（IAPR）主办的2019年文档分析与识别国际会议（ICDAR）[联机手写数学公式识别竞赛（CROHME）](https://www.cs.rit.edu/~rlaz/files/CROHME+TFD%E2%80%932019.pdf)中脱机识别任务荣获季军。
     - 毕业论文《非光滑空间上的两个几何分析问题》在2021年获全体评阅人和答辩委员一致通过。
 
+## 工作经历
+
+*   算法工程师（2021年至今）
+    - 联机手写文字与数学公式识别系统的设计与实现。
+
 如有意联系本人，可以发电子邮件到<a href="mailto&#58;chan&#64;chungkwong&#46;cc">chan (AT) chungkwong (DOT) cc</a>。
 

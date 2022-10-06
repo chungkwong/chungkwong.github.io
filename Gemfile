@@ -16,3 +16,5 @@ gem 'jekyll-seo-tag'
 gem 'jekyll-redirect-from'
 gem 'jekyll-toc'
 gem 'kramdown-parser-gfm'
+
+gem "webrick", "~> 1.7"
