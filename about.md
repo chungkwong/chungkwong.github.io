@@ -6,27 +6,21 @@ toc: true
 
 陈颂光，群众，1992年生。一直以来，坚持走自己的路，在现实中寻觅理想，在平淡中追求自由，让自己的学习和工作成为为自己而玩。
 
-## 作品
-
-项目|简介
-:---|:---
-[ViewFact](https://www.viewfact.org) | 一个结构化数据搜索网站原型
-[Fooledit](https://github.com/chungkwong/fooledit) | 一个什么都会一点的怪物
-[SillyTranslate](https://github.com/chungkwong/sillytranslate) | 一个交互式计算机辅助翻译系统
-[JSchemeMin](https://github.com/chungkwong/jschememin) | 一个Scheme语言的解释器
-[JPrologMin](https://github.com/chungkwong/jprologmin) | 一个Prolog语言的解释器
-[sysu_thesis](https://github.com/chungkwong/sysu_thesis)|中山大学本科毕业论文非官方模版
-[MathOCR](https://github.com/chungkwong/mathocr) | 一个科技文档识别系统
-
-另外早期做过Java字节码反编译器、函数绘图器、手写输入法之类的。
-
 ## 技术能力
 
-- 具备多年Java语言编程经验，包括Java SE平台和Android平台。对C、Scheme、Prolog也有深入了解。有需要时也改一点JavaScript、PHP、Python、AWK、shell之类的程序。
-- 有一定GNU/Linux、Spring、Solr、Emacs、CPanel、cakephp、Jekyll、Joomla、五笔输入法、LaTeX、R、Octave、Maxima之类乱七八糟的使用经验。
-- 自学过计算机系统、编译原理、操作系统、计算机网络、数据库、数据结构、模式识别、计算理论、信息安全之类的标准常识。
-- 重新探讨了[把脱机手写识别归结为联机手写识别的可行性](http://doi.org/10.1109/ACCESS.2020.2984627)，并用公开数据集上的实验数据给予正面结论，结果发表于IEEE旗下期刊。
-- 提出了Sauvola、Niblack、Bernsen等局部自适应二值化方法的一种[内存高效的快速实现](https://arxiv.org/abs/1905.13038)，去掉挥霍空间的积分图像的同时还能稍为提高速度。
+- 计算机背景
+    - 广泛的理论储备。自学计算机系统、编译原理、操作系统、计算机网络、数据库、数据结构、模式识别、计算理论、信息安全之类的领域。
+    - 扎实的编程功底。十多年编程经验，兼通过程式编程、面向对象编程、函数式编程和声明式编程等范式，深入理解类型系统。不仅能在生产级项目中运用Java、BASH、Python和JavaScript等语言外，而且曾经独力在JVM上实现过几乎完全符合标准的Scheme语言解释器[JSchemeMin](https://github.com/chungkwong/jschememin)和Prolog语言解释器[JPrologMin](https://github.com/chungkwong/jprologmin)。
+    - 熟知开发工具。熟悉GNU/Linux操作系统、git版本管理系统和LaTeX排版系统。能利用静态分析工具、单元测试覆盖率工具、性能分析工具、调试器和构建系统等来提高成品质量。
+- 应用程序开发
+    - 用户界面搭建。熟练开发Android平台上的移动端应用，还有使用Swing/JavaFX搭建能够在Windows、Mac OS X和Linux上运行的跨平台桌面端应用程序。基本掌握基于HTML、CSS和JavaScript的Web前端开发。
+    - 后端搭建。能借助[Spring Boot](https://spring.io/projects/spring-boot)开发网站后端和RESTful服务。有关系型数据库以及全文检索数据仓库如Lucene/Solr的实践经验。一个个人项目是结构化数据搜索网站原型[ViewFact](https://www.viewfact.org)。
+- 机器学习
+    - 问题建模。能够基于图神经网络、循环神经网络、卷积神经网络和全连接神经网络设计合适的网络结构来解决实际问题，而它们往往不是常规的CV或NLP任务。除了深度学习外，还用过支持向量机、决策树、最近邻分类器和一些概率统计方法。曾为联机（基于笔迹）和脱机（基于图片）的手写形状/文本行/数学公式/化学结构式识别、联机手写文档版面分析、笔迹补偿预测和个性化手写文本生成等项目开发原型系统。
+    - 数据收集、清理和增广。除了设计数据收集/标注工具来提高效率，以及整合异构数据集以增加数据来源的多样性外，更不时采用激进的数据合成和增广策略以提高模型泛化能力或节省数据成本。
+    - 模型训练。除了提前停止、学习率调度、优化器/初始化方法/正规化层/激活函数选取和其它元参数调整，还包括设计辅助损失函数和迁移学习。
+    - 端侧模型部署与调优。有使用常见推理框架如[ONNX Runtime](https://onnxruntime.ai/)、[TensorFlow Lite](https://tensorflow.google.cn/lite/)和[QNN](https://developer.qualcomm.com/software/qualcomm-neural-processing-sdk)在移动设备上部署神经网络模型的经验，并通过模型量化、算子融合和硬件加速等手段优化安装包大小、内存占用和速度。
+
 
 ## 教育背景
 
@@ -47,6 +41,8 @@ toc: true
     - 在2017学年春季学期担任[《实变函数》](https://chungkwong.gitlab.io/real17/)课程助教
     - 在2018学年春季学期担任[《实变函数》](https://kwong.gitee.io/real18/)课程助教
     - 在2019学年秋季学期担任[《偏微分方程》](https://kwong.gitee.io/pde19/)课程助教
+    - 重新探讨了[把脱机手写识别归结为联机手写识别的可行性](http://doi.org/10.1109/ACCESS.2020.2984627)，并用公开数据集上的实验数据给予正面结论，启发了一些工作。
+    - 提出了Sauvola、Niblack、Bernsen等局部自适应二值化方法的一种[内存高效的快速实现](https://arxiv.org/abs/1905.13038)，去掉挥霍空间的积分图像的同时还能稍为提高速度。
     - 在国际模式识别学会（IAPR）主办的2019年文档分析与识别国际会议（ICDAR）[联机手写数学公式识别竞赛（CROHME）](https://www.cs.rit.edu/~rlaz/files/CROHME+TFD%E2%80%932019.pdf)中脱机识别任务荣获季军。
     - 毕业论文《非光滑空间上的两个几何分析问题》在2021年获全体评阅人和答辩委员一致通过。
 
