@@ -33,6 +33,5 @@
 ## [关于作者]({{ '/about.html' | relative_url }})
 
 - [GitHub](https://github.com/chungkwong)
-- [GitLab](https://gitlab.com/chungkwong)
 - [Maven](http://mvnrepository.com/artifact/com.github.chungkwong)
 
