@@ -38,9 +38,9 @@ toc: true
     - 必修课及专业选修课平均绩点为4.3，在本专业110人中排名第1
 *   [中山大学](http://www.sysu.edu.cn/)数学学院基础数学专业硕士研究生（2015-2017）
 *   [中山大学](http://www.sysu.edu.cn/)数学学院基础数学专业博士研究生（2017-2021）
-    - 在2017学年春季学期担任[《实变函数》](https://chungkwong.gitlab.io/real17/)课程助教
-    - 在2018学年春季学期担任[《实变函数》](https://kwong.gitee.io/real18/)课程助教
-    - 在2019学年秋季学期担任[《偏微分方程》](https://kwong.gitee.io/pde19/)课程助教
+    - 在2017学年春季学期担任[《实变函数》](https://chungkwong.cc/real17/)课程助教
+    - 在2018学年春季学期担任[《实变函数》](https://chungkwong.cc/real18/)课程助教
+    - 在2019学年秋季学期担任[《偏微分方程》](https://chungkwong.cc/pde19/)课程助教
     - 重新探讨了[把脱机手写识别归结为联机手写识别的可行性](http://doi.org/10.1109/ACCESS.2020.2984627)，并用公开数据集上的实验数据给予正面结论，启发了一些工作。
     - 提出了Sauvola、Niblack、Bernsen等局部自适应二值化方法的一种[内存高效的快速实现](https://arxiv.org/abs/1905.13038)，去掉挥霍空间的积分图像的同时还能稍为提高速度。
     - 在国际模式识别学会（IAPR）主办的2019年文档分析与识别国际会议（ICDAR）[联机手写数学公式识别竞赛（CROHME）](https://www.cs.rit.edu/~rlaz/files/CROHME+TFD%E2%80%932019.pdf)中脱机识别任务荣获季军。
